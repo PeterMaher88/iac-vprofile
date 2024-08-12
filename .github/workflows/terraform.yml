@@ -60,7 +60,7 @@ jobs:
         run: exit 1
 
       - name: Terraform Apply
-        id: apply
+        id: apple
         if: github.ref == 'refs/heads/main' && github.enevt_name == 'push'
         run: terraform apply -auto-approve -input=false -parallelism=1 planfile
 
